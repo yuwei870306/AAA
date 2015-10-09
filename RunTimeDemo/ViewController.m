@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    SEL s = @selector(test:);
+    
+    NSString *se = NSStringFromSelector(s);
+    NSLog(@"result-->%@",se);
 }
 
 - (void)didReceiveMemoryWarning {
